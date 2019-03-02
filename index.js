@@ -68,13 +68,10 @@ bot.on('message', function(message) {
 })
 
 bot.on('message', message => {
-  if (message.content[0] === '*') {
-    let splitMessage = message.content.split(" ");
-    if (splitMessage[0] === '*play') {
-      if (splitMessage.length === 2) {
+  if (message.content=== '*jdg') {
         if (message.member.voiceChannel) {
           message.member.voiceChannel.join().then(connection => {
-            dispatcher = connection.playArbitraryInput(splitMessage[1]);
+            dispatcher = connection.playArbitraryInput('Compilation musiques Joueur du Grenier - JDG HD.mp3');
 
             dispatcher.on('error', e => {
               console.log(e);
@@ -86,20 +83,15 @@ bot.on('message', message => {
             });
           }).catch(console.log);
         }
-        else
-          message.reply("Erreur, vous devez d'abord rejoindre un canal vocal");
-      }
-      else
-        message.reply("Erreur, problème dans les paramètres");
-    }
-    else if (splitMessage[0] === '*pause') {
+    else if (message.content === '*pause') {
       if (dispatcher !== undefined)
         dispatcher.pause();
     }
-    else if (splitMessage[0] === '*resume') {
+    else if (message.content === '*resume') {
       if (dispatcher !== undefined)
         dispatcher.resume();
     }
   }
 });
+
 bot.login(process.env.TOKEN)
