@@ -13,7 +13,8 @@ bot.on('message', function(message) {
     '*caesar -> Essaye pour voir',
     '*vie -> Damsoooo',
     '@everyone -> N\'essaye même pas',
-    '*grammarnazi -> Adulation au Grammar Führer'])
+    '*grammarnazi -> Adulation au Grammar Führer',
+    '*meme -> Envoie un meme'])
     }
 })
 
@@ -91,5 +92,4 @@ bot.on('message', function(message) {
         message.channel.send({embed})
   }
 })
-
 bot.login(process.env.TOKEN)
