@@ -1,6 +1,5 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-var dispatcher;
 
 bot.on('ready', function() {
   bot.user.setGame('En cours de dev').catch(console.error)
@@ -66,32 +65,5 @@ bot.on('message', function(message) {
       message.channel.send('HEIL YADA',{embed})
   }
 })
-
-bot.on('message', message => {
-  if (message.content=== '*jdg') {
-        if (message.member.voiceChannel) {
-          message.member.voiceChannel.join().then(connection => {
-            dispatcher = connection.playArbitraryInput('Compilation musiques Joueur du Grenier - JDG HD.mp3');
-
-            dispatcher.on('error', e => {
-              console.log(e);
-            });
-
-            dispatcher.on('end', e => {
-              dispatcher = undefined;
-              console.log('Fin du son');
-            });
-          }).catch(console.log);
-        }
-    else if (message.content === '*pause') {
-      if (dispatcher !== undefined)
-        dispatcher.pause();
-    }
-    else if (message.content === '*resume') {
-      if (dispatcher !== undefined)
-        dispatcher.resume();
-    }
-  }
-});
 
 bot.login(process.env.TOKEN)
