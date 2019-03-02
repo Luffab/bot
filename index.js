@@ -66,4 +66,30 @@ bot.on('message', function(message) {
   }
 })
 
+bot.on('message', function(message) {
+  if (message.content === '*meme') {
+    const meme = [
+      'https://i.ibb.co/Jd7GqFR/1purxpt3a.png',
+      'https://i.ibb.co/vYm1cy4/6lf5b4lvq.png',
+      'https://i.ibb.co/gyT2YFH/9m1rbgu2j.png',
+      'https://i.ibb.co/tDByj6z/9v2bhewsv.png',
+      'https://i.ibb.co/qFP9xJV/939ay5dip.png',
+      'https://i.ibb.co/C9jdY22/a22ba0mz1.png',
+      'https://i.ibb.co/QHJ9hcH/eateblx8n.png',
+      'https://i.ibb.co/d4t6LGd/fnlk6tbl0.png',
+      'https://i.ibb.co/JvpXrwq/hio7ec6vi.png',
+      'https://i.ibb.co/VqqhmMc/rtrk8rd0r.png',
+      'https://i.ibb.co/R682HKY/sq9aavwy6.png',
+      'https://i.ibb.co/gDYsmq8/t5mqepfkt.png',
+      'https://i.ibb.co/X8YcjB8/wvc2qjs98.png']
+
+      const embed = new Discord.RichEmbed()
+        .setColor(0x0000FF)
+        .setImage(meme[Math.floor(Math.random() * meme.length)])
+        .setFooter("Loooool")
+        .setTimestamp()
+        message.channel.send({embed})
+  }
+})
+
 bot.login(process.env.TOKEN)
