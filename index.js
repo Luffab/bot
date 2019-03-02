@@ -66,4 +66,4 @@ bot.on('message', function(message) {
   }
 })
 
-client.login(process.env.TOKEN)
+bot.login(process.env.TOKEN)
