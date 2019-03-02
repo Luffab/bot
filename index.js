@@ -82,7 +82,9 @@ bot.on('message', function(message) {
       'https://i.ibb.co/VqqhmMc/rtrk8rd0r.png',
       'https://i.ibb.co/R682HKY/sq9aavwy6.png',
       'https://i.ibb.co/gDYsmq8/t5mqepfkt.png',
-      'https://i.ibb.co/X8YcjB8/wvc2qjs98.png']
+      'https://i.ibb.co/X8YcjB8/wvc2qjs98.png'
+      'https://i.ibb.co/56rwSQ0/2v0zmh.jpg',
+      'https://i.ibb.co/4VQLPJh/2v0zty.jpg']
 
       const embed = new Discord.RichEmbed()
         .setColor(0x0000FF)
