@@ -98,4 +98,10 @@ bot.on('message', function(message) {
         message.channel.send({embed})
   }
 })
+
+bot.on('message', function(message) {
+  if (message.content === '^^cola') {
+    message.reply('Tu as recu un cola !')
+  }
+})
 bot.login(process.env.TOKEN)
