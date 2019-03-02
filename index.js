@@ -40,7 +40,11 @@ bot.on('message', function(message) {
     const vie = [
     'https://i.ibb.co/zRtxjny/th-2.jpg',
     'https://i.ibb.co/RT0WMh7/870x489-damso.jpg',
-    'https://i.ibb.co/WpFJNDP/images-3.jpg' ]
+    'https://i.ibb.co/WpFJNDP/images-3.jpg',
+    'https://i.ibb.co/kmRmtTX/Screenshot-20190302-171530-1.jpg',
+    'https://i.ibb.co/C9vwLJr/th-4.jpg',
+    'https://i.ibb.co/drM06PD/th-3.jpg']
+
     const embed = new Discord.RichEmbed()
       .setColor(0x0F0301)
       .setImage(vie[Math.floor(Math.random() * vie.length)])
