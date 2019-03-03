@@ -163,7 +163,7 @@ bot.on('guildMemberRemove', function(member) {
   message.author.send("Revieeeeeeeeeeeeens !")
 })
 
-bot.on('message', function(member) {
+bot.on('message', function(message) {
   if (message.content === '*muda') {
     const muda = message.guild.roles.find("name", "Muda Muda Muda");
 
