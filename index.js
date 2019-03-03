@@ -16,6 +16,7 @@ bot.on('message', function(message) {
     '*highfive [User] -> Fait un highfive avec un [user]',
     '*cola -> Pour gagner un cola afin de construire ton bateau One Piece',
     '*muda -> Vous donne le role Muda Muda Muda',
+    '*really -> Really Nigga ?',
     '*meme -> Envoie un meme'])
     }
 })
