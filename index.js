@@ -13,6 +13,7 @@ bot.on('message', function(message) {
     '*caesar -> Essaye pour voir',
     '*vie -> Damsoooo',
     '*grammarnazi -> Adulation au Grammar Führer',
+    '*highfive [User] -> Fait un highfive avec un [user]',
     '*meme -> Envoie un meme'])
     }
 })
