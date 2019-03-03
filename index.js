@@ -15,6 +15,7 @@ bot.on('message', function(message) {
     '*grammarnazi -> Adulation au Grammar Führer',
     '*highfive [User] -> Fait un highfive avec un [user]',
     '*cola -> Pour gagner un cola afin de construire ton bateau One Piece',
+    '*muda -> Vous donne le role Muda Muda Muda',
     '*meme -> Envoie un meme'])
     }
 })
