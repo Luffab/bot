@@ -55,7 +55,7 @@ bot.on('message', function(message) {
 })
 
 bot.on('message', function(message) {
-  if (message.content.includes === '@everyone') {
+  if (message.content.includes('@everyone')) {
     message.author.send('EYH OH ! Moi aussi je vais te tag en mp. Tu te prends pour qui ?')
   }
 })
