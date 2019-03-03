@@ -12,7 +12,6 @@ bot.on('message', function(message) {
     '*zeppeli -> Envoie une image de ma fameuse sauce tomate',
     '*caesar -> Essaye pour voir',
     '*vie -> Damsoooo',
-    '@everyone -> N\'essaye même pas',
     '*grammarnazi -> Adulation au Grammar Führer',
     '*meme -> Envoie un meme'])
     }
