@@ -113,7 +113,7 @@ bot.on('message', function(message) {
 })
 
 bot.on('message', function(message) {
-  if (message.content === '^^cola') {
+  if (message.content === '*cola') {
     const embed = new Discord.RichEmbed()
       .setColor(0xFFFF00)
       .setImage("https://i.ibb.co/QnJrxZZ/16-161897-ps2-pb-dio-render-jojos-bizarre-adventure-dio.jpg")
