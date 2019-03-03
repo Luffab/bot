@@ -129,7 +129,7 @@ bot.on('message', function(message) {
   if (message.content === '*highfive @Caesar-chan#9858')
     message.reply('tu me fais un highfive')
     
-  if (message.content.startsWith('*highfive')) {
+  else if (message.content.startsWith('*highfive')) {
     const user = message.mentions.users.first();
     if (user) {
       const member = message.guild.member(user);
