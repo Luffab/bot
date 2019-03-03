@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 
 bot.on('ready', function() {
-  bot.user.setGame('En cours de dev').catch(console.error)
+  bot.user.setGame('*help').catch(console.error)
 })
 
 bot.on('message', function(message) {
