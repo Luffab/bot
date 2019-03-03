@@ -171,7 +171,7 @@ bot.on('message', function(message) {
     message.channel.send("Setup starting ...\n\n")
     message.guild.createRole({
       name: 'Muda Muda Muda',
-      color: 'YELLOW',
+      color: 'PURPLE',
     })
     message.channel.send("Setup finished");
     }
