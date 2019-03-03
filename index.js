@@ -154,4 +154,21 @@ bot.on('message', function(message) {
   }
 })
 
+bot.on('guildMemberAdd', function(member) {
+  member.guild.channels.find("name", "accueil").send(`Bienvenue ${member} parmis nous !`)
+})
+
+bot.on('guildMemberRemove', function(member) {
+  member.guild.channels.find("name", "accueil").send(`Adieu ${member}.`)
+  message.author.send("Revieeeeeeeeeeeeens !")
+})
+
+bot.on('message', function(message) {
+  if (message.content === '*muda') {
+    const muda = message.guild.roles.find("name", "Muda Muda Muda");
+
+    message.member.addRoles(muda);
+  }
+})
+
 bot.login(process.env.TOKEN)
