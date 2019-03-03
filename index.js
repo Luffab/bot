@@ -115,11 +115,11 @@ bot.on('message', function(message) {
 bot.on('message', function(message) {
   if (message.content === '^^cola') {
     const embed = new Discord.RichEmbed()
-      .setColor(0xFF0000)
-      .setImage("https://cdn.discordapp.com/emojis/366190613927821323.png?v=1")
-      .setFooter("Cola")
+      .setColor(0xFFFF00)
+      .setImage("https://i.ibb.co/QnJrxZZ/16-161897-ps2-pb-dio-render-jojos-bizarre-adventure-dio.jpg")
+      .setFooter("Diooooo")
       .setTimestamp()
-      message.channel.send('Tu as reçu un cola',{embed})
+      message.channel.send("You thought you'd won a cola, but it was me, DIO !",{embed});
   }
 })
 
