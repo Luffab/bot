@@ -164,6 +164,22 @@ bot.on('guildMemberRemove', function(member) {
 })
 
 bot.on('message', function(message) {
+  if (message.content === '*setup')
+  {
+    if (message.member.hasPermission('ADMINISTRATOR')){
+
+    message.channel.send("Setup starting ...\n\n")
+    message.guild.createRole({
+      name: 'Muda Muda Muda',
+      color: 'YELLOW',
+    })
+    message.channel.send("Setup finished");
+    }
+    else
+    {
+      message.reply('Tu n'as pas les droits')
+    }
+  }
   if (message.content === '*muda') {
     const muda = message.guild.roles.find("name", "Muda Muda Muda");
 
