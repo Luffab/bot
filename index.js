@@ -141,4 +141,11 @@ bot.on('message', function(message) {
   }
 });
 
+bot.on('message', function(message) {
+  if (message.content === '*nudes' || message.content === '*sendnudes') {
+    message.channel.send('Va voir tes messages privés grand fou :wink:')
+    message.author.send('ESPECE DE PERVERS ! TU DEVRAIS ETRE MORT DE HONTE !!!')
+  }
+})
+
 bot.login(process.env.TOKEN)
