@@ -143,8 +143,13 @@ bot.on('message', function(message) {
 
 bot.on('message', function(message) {
   if (message.content === '*nudes' || message.content === '*sendnudes') {
+    const nudes = [
+      'ESPECE DE PERVERS ! TU DEVRAIS ETRE MORT DE HONTE',
+      "Tu t'es pris pour qui a demander des nudes",
+      "Reviens me voir quand tu l'auras mérité. JAMAIS !" ]
+
     message.channel.send('Va voir tes messages privés grand fou :wink:')
-    message.author.send('ESPECE DE PERVERS ! TU DEVRAIS ETRE MORT DE HONTE !!!')
+    message.author.send(nudes[Math.floor(Math.random() * nudes.length)])
   }
 })
 
