@@ -104,21 +104,21 @@ bot.on('message', function(message) {
   }
 })
 
-bot.on('message', function(message) {
-  if (!message.guild)
-    return;
-  if (message.content.startWith('*highfive')) {
-    const user = message.mentions.user.fisrt();
+bot.on('message', message => {
+  if (!message.guild) return;
+
+  if (message.content.startsWith('*highfive')) {
+    const user = message.mentions.users.first();
     if (user) {
       const member = message.guild.member(user);
       if (member) {
-        message.reply(`Fait un highfive avec ${user.tag}`);
+          message.reply(`fait un highfive avec ${user.tag}`);
+      } else {
+        message.reply("l'utilisateur n'est pas dans le serveur");
       }
-      else
-        message.reply("L'utilisateur n'est pas dans le serveur");
-    }
-    else
+    } else {
       message.reply("tu n'as pas d'ami ?");
+    }
   }
 });
 
