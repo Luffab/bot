@@ -25,7 +25,7 @@ bot.on('message', function(message) {
       .setImage("https://i.ibb.co/ymTwwJC/zeppeli.png")
       .setFooter("Powered by William Antonio Zeppeli")
       .setTimestamp()
-      message.channel.send({embed})
+      message.channel.send('ZEPPELIIIIII',{embed})
   }
 })
 
