@@ -189,4 +189,15 @@ bot.on('message', function(message) {
   }
 })
 
+bot.on('message', function(message) {
+  if (message.content === '*rly' || message.content === '*really*) {
+    const embed = new Discord.RichEmbed()
+      .setColor(0x0F0301)
+      .setImage("https://i.ibb.co/LkXsDqs/51909353.jpg")
+      .setFooter("Really Nigga")
+      .setTimestamp()
+      message.channel.send({embed});
+  }
+})
+
 bot.login(process.env.TOKEN)
