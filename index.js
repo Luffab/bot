@@ -177,7 +177,7 @@ bot.on('message', function(message) {
     }
     else
     {
-      message.reply('Tu n'as pas les droits')
+      message.reply("Tu n'as pas les droits")
     }
   }
   if (message.content === '*muda') {
