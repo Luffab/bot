@@ -114,7 +114,12 @@ bot.on('message', function(message) {
 
 bot.on('message', function(message) {
   if (message.content === '^^cola') {
-    message.reply('Tu as recu un cola !')
+    const embed = new Discord.RichEmbed()
+      .setColor(0xFF0000)
+      .setImage("https://cdn.discordapp.com/emojis/366190613927821323.png?v=1")
+      .setFooter("Cola")
+      .setTimestamp()
+      message.channel.send('Tu as reçu un cola',{embed})
   }
 })
 
