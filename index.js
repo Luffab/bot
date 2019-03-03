@@ -103,4 +103,23 @@ bot.on('message', function(message) {
     message.reply('Tu as recu un cola !')
   }
 })
+
+bot.on('message', function(message) {
+  if (!message.guild)
+    return;
+  if (message.content.startWith('*highfive')) {
+    const user = message.mentions.user.fisrt();
+    if (user) {
+      const member = message.guild.member(user);
+      if (member) {
+        message.reply(`Fait un highfive avec ${user.tag}`);
+      }
+      else
+        message.reply("L'utilisateur n'est pas dans le serveur");
+    }
+    else
+      message.reply("tu n'as pas d'ami ?");
+  }
+});
+
 bot.login(process.env.TOKEN)
