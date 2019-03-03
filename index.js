@@ -167,7 +167,7 @@ bot.on('message', function(member) {
   if (message.content === '*muda') {
     const muda = message.guild.roles.find("name", "Muda Muda Muda");
 
-    message.member.addRoles(muda);
+    message.member.addRole(muda);
     message.author.send('MUDA MUDA MUDA');
   }
 })
