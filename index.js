@@ -30,10 +30,23 @@ bot.on('message', function(message) {
 })
 
 bot.on('message', function(message) {
-  if (message.content === '*Caesar' || message.content === '*caesar') {
-    message.reply('Tu as si bon gooooooût')
+  if (!message.guild) return;
+
+  if (message.content.startsWith('*caesar') || message.content.startsWith('*Caesar')) {
+    const user = message.mentions.users.first();
+    if (user) {
+      const member = message.guild.member(user);
+      if (member) {
+          message.channel.send(`${user.username}, tu as si bon goooooût !`);
+      } else {
+        message.reply("l'utilisateur n'est pas dans le serveur");
+      }
+    } else {
+      message.reply("tu as si bon goooooût !");
+    }
   }
-})
+});
+
 
 bot.on('message', function(message) {
   if (message.content === '*vie' || message.content === '*Vie') {
