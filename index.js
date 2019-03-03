@@ -190,7 +190,7 @@ bot.on('message', function(message) {
 })
 
 bot.on('message', function(message) {
-  if (message.content === '*rly' || message.content === '*really*) {
+  if (message.content === '*rly' || message.content === '*really') {
     const embed = new Discord.RichEmbed()
       .setColor(0x0F0301)
       .setImage("https://i.ibb.co/LkXsDqs/51909353.jpg")
