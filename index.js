@@ -113,7 +113,7 @@ bot.on('message', message => {
     if (user) {
       const member = message.guild.member(user);
       if (member) {
-          message.reply(`fait un highfive avec ${user.tag}`);
+          message.reply(`fait un highfive avec ${user}`);
       } else {
         message.reply("l'utilisateur n'est pas dans le serveur");
       }
