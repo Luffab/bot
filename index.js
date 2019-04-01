@@ -201,4 +201,10 @@ bot.on('message', function(message) {
   }
 })
 
+bot.on('message', function(message) {
+  if (message.content.includes('Tout le monde') || message.content.includes('tout le monde')) {
+    message.channel.send('@everyone')
+  }
+})
+
 bot.login(process.env.TOKEN)
