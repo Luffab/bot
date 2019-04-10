@@ -202,8 +202,8 @@ bot.on('message', function(message) {
 })
 
 bot.on('message', function(message) {
-  if (message.content.includes('Tout le monde') || message.content.includes('tout le monde')) {
-    message.channel.send('@everyone')
+  if (message.content.includes("Emy je t'aime")) {
+    message.channel.send("Emy c'est la meilleure")
   }
 })
 
